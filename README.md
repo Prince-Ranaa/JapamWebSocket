@@ -18,12 +18,14 @@ Node.js, Express, TypeScript, Socket.IO, MongoDB, Mongoose, JWT
 
 ⚙️ Setup
 1. Download zip/clone and then run command npm install
+
 2. Environment Variables
-          MONGO_URI= your_Mongo_Uri
-          PORT=5000
-          JWT_SECRET= Your_Secret
-          API_PREFIX=/api/v1
-          NODE_ENV=development
+MONGO_URI= your_Mongo_Uri
+PORT=5000
+JWT_SECRET= Your_Secret
+API_PREFIX=/api/v1
+NODE_ENV=development
+
 3. Run
    nodemon src/server.ts
 
@@ -32,21 +34,21 @@ Node.js, Express, TypeScript, Socket.IO, MongoDB, Mongoose, JWT
 🔌 API Routes
 
 🔌Auth
-  POST /api/v1/auth/signup
-  POST /api/v1/auth/login → returns JWT
+POST /api/v1/auth/signup
+POST /api/v1/auth/login → returns JWT
 
 🔌 Socket Events
 
-  Client → Server
-  message:send — send message
-  message:history — fetch history
-  user:check-status — check if user is online
+Client → Server
+message:send — send message
+message:history — fetch history
+user:check-status — check if user is online
   
-  Server → Client
-  message:receive
-  message:history:response
-  user:online
-  user:offline
+Server → Client
+message:receive
+message:history:response
+user:online
+user:offline
 
 
 
@@ -61,8 +63,8 @@ Node.js, Express, TypeScript, Socket.IO, MongoDB, Mongoose, JWT
 https://github.com/Prince-Ranaa/webSocket-Frontend
 
 To run it:
-  npm install
-  npm run dev
+npm install
+npm run dev
 
 After starting the app, sign up first, then log in.
 Only the login flow stores the JWT token in localStorage, so please log in before testing any chat functionality.
